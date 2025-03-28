@@ -31,7 +31,6 @@ resource "google_storage_bucket_object" "website_files" {
   bucket = google_storage_bucket.website.name
 }
 
-
 # Reserve an external IP Address
 resource "google_compute_global_address" "website_ip" {
   name = "website-lb-ip"
