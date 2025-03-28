@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik Iso", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    background-color: #151515;
+    color: white;
+    position: relative;
+    /* height: 100vh; */
+}
+
+.result{
+    position: absolute;
+    backdrop-filter: blur('10px');
+    background-color: #323232b3;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.message{
+    position: absolute;
+    height: 110px;
+    width: 100%;
+    color: black;
+    background-color: white;
+    transform: translateY(300%);
+    font-size: 5rem;
+    font-weight: 800;
+    display: none;
+    text-align: center;
+}
+.close{
+    top: 10px;
+    right: 10px;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.close-button{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    z-index: 1000;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+.gamename{
+    font-size: 3rem;
+    color: greenyellow;
+    font-weight: 900;
+}
+
+.players{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.25 all ease-in-out;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.cell{
+    border: 1px solid gray;
+    width: 100px;
+    color: white;
+    background-color: #202020;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    border-radius: 10px;
+}
+
+.cell:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(236, 255, 208);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <p class="result">
+        <p class="message"></p>
+    </p>
+    <main class="main">
+        <nav class="navbar">
+            <p class="players" id="player1">Player 1</p>
+            <p class="gamename">Tic-Tac-Toe</p>
+            <p class="players" id="player2">Player 2</p>
+        </nav>
+
+        <section class="game">
+            <span class="row">
+                <button value="0" class="cell"></button>
+                <button value="1" class="cell"></button>
+                <button value="2" class="cell"></button>
+            </span>
+            <span class="row">
+                <button value="3" class="cell"></button>
+                <button value="4" class="cell"></button>
+                <button value="5" class="cell"></button>
+            </span>
+            <span class="row">
+                <button value="6" class="cell"></button>
+                <button value="7" class="cell"></button>
+                <button value="8" class="cell"></button>
+            </span>
+        </section>
+
+        <p><button class="btn" onclick="reset()">Reset</button></p>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
