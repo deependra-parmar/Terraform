@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Terraform
-=======
 # Terraform
 IaC platform or tool helps in provisioning, managing and automating the cloud infrastructure as code.
 
@@ -47,4 +44,3 @@ and after reviewing the plan logs if everything seems fine to you, you can apply
 ```
 terraform apply
 ```
->>>>>>> 840c90f (Initial Commit)
